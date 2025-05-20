@@ -17,8 +17,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="footer-column">
-          <h3>Marketplace Artesanal</h3>
+        <div>
+          <h4>Marketplace Artesanal</h4>
           <p>Conectamos a artesanos con compradores que valoran lo hecho a mano y apoyan el comercio justo.</p>
           <div className="social-icons">
             <a href="#"><FaFacebook /></a>
@@ -27,38 +27,33 @@ const Footer = () => {
             <a href="#"><FaWhatsapp /></a>
           </div>
         </div>
-        
-        <div className="footer-column">
-          <h3>Enlaces</h3>
-          <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/productos">Productos</a></li>
-            <li><a href="/artesanos">Artesanos</a></li>
-            <li><a href="/sobre-nosotros">Sobre nosotros</a></li>
-          </ul>
+        <div>
+          <h4>Enlaces</h4>
+          <p>
+            <a href="/">Inicio</a><br />
+            <a href="/artesanos">Artesanos</a><br />
+            <a href="/sobre-nosotros">Sobre nosotros</a>
+          </p>
         </div>
-        
-        <div className="footer-column">
-          <h3>Ayuda</h3>
-          <ul>
-            <li><a href="/faq">Preguntas frecuentes</a></li>
-            <li><a href="/envios">Envíos y devoluciones</a></li>
-            <li><a href="/pagos">Métodos de pago</a></li>
-            <li><a href="/contacto">Contacto</a></li>
-          </ul>
+        <div>
+          <h4>Ayuda</h4>
+          <p>
+            <a href="/faq">Preguntas frecuentes</a><br />
+            <a href="/envios">Envíos y devoluciones</a><br />
+            <a href="/pagos">Métodos de pago</a><br />
+            <a href="/contacto">Contacto</a>
+          </p>
         </div>
-        
-        <div className="footer-column">
-          <h3>Contacto</h3>
-          <ul className="contact-info">
-            <li><FaMapMarkerAlt /> Ciudad, País</li>
-            <li><FaPhone /> +123 456 7890</li>
-            <li><FaEnvelope /> info@marketartesanal.com</li>
-            <li><FaClock /> Lunes a Viernes: 9am - 6pm</li>
-          </ul>
+        <div>
+          <h4>Contacto</h4>
+          <p>
+            <FaMapMarkerAlt /> Ciudad, País<br />
+            <FaPhone /> +123 456 7890<br />
+            <FaEnvelope /> info@marketartesanal.com<br />
+            <FaClock /> Lunes a Viernes: 9am - 6pm
+          </p>
         </div>
       </div>
-      
       <div className="copyright">
         <p>&copy; {currentYear} Marketplace Artesanal. Todos los derechos reservados.</p>
       </div>

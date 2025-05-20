@@ -2,8 +2,23 @@ body {
   background: #181818 !important;
   color: #fff;
   font-family: 'Segoe UI', Arial, sans-serif;
-  text-align: center;
+  margin: 0; /* Asegura que no haya espacios inesperados */
+  
 }
+
+.content-container {
+  width: 100%;
+  padding: 20px;
+}
+
+
+.section-container {
+  
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ========== HERO SECTION ========== */
 .hero-section {
   background: linear-gradient(120deg, #232323 60%, #181818 100%);
   border-radius: 30px;
@@ -13,14 +28,7 @@ body {
   overflow: hidden;
   text-align: center;
 }
-.mb-2 {
-  margin-bottom: 2rem;
-  color: #fff;
-}
-.mb-4 {
-  
-  color: #ff9900;
-}
+
 .hero-section img {
   width: 320px;
   border-radius: 50%;
@@ -29,11 +37,13 @@ body {
   right: 2rem;
   top: 2rem;
 }
+
 .hero-content {
-  max-width: 500px;
+  
   z-index: 2;
   position: relative;
 }
+
 .shop-btn {
   background: #ff9900;
   color: #fff;
@@ -44,9 +54,12 @@ body {
   margin-top: 1rem;
   transition: background 0.2s;
 }
+
 .shop-btn:hover {
   background: #cc7a00;
 }
+
+/* ========== TITULOS ========== */
 .section-title {
   color: #ff9900;
   font-size: 2rem;
@@ -54,6 +67,17 @@ body {
   text-align: center;
   letter-spacing: 2px;
 }
+
+.mb-2 {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.mb-4 {
+  color: #ff9900;
+}
+
+/* ========== TARJETAS DE PRODUCTO ========== */
 .product-card {
   background: #232323;
   border-radius: 18px;
@@ -64,11 +88,13 @@ body {
   transition: transform 0.2s, box-shadow 0.2s;
   position: relative;
 }
+
 .product-card:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 8px 32px #000a;
   z-index: 2;
 }
+
 .product-img {
   width: 90px;
   height: 90px;
@@ -78,15 +104,18 @@ body {
   border: 2px solid #ff9900;
   background: #fff;
 }
+
 .product-price {
   color: #ff9900;
   font-size: 1.2rem;
   font-weight: bold;
 }
+
 .product-weight {
   color: #bbb;
   font-size: 0.95rem;
 }
+
 .add-btn {
   background: #ff9900;
   color: #fff;
@@ -97,14 +126,18 @@ body {
   margin-top: 0.7rem;
   transition: background 0.2s;
 }
+
 .add-btn:hover {
   background: #cc7a00;
 }
+
+/* ========== FILTROS Y BOTONES ========== */
 .filter-list {
   color: #ff9900;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
 }
+
 .view-all-btn {
   background: #232323;
   color: #ff9900;
@@ -117,10 +150,13 @@ body {
   margin-top: 1.5rem;
   transition: background 0.2s, color 0.2s;
 }
+
 .view-all-btn:hover {
   background: #ff9900;
   color: #232323;
 }
+
+/* ========== NAVBAR ========== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -128,16 +164,72 @@ body {
   padding: 1rem 2rem;
   background-color: #f9f2ec;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #232323;
 }
 
 .cart {
   cursor: pointer;
 }
+
+/* ========== FOOTER ========== */
 .footer {
-  background: #232323;
+  background: #222;
   color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 1rem;
+  padding: 32px 0 12px 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin-top: 4rem; /* 🔧 Empuja el footer hacia abajo */
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  
+}
+
+.footer-content > div {
+  flex: 1 1 180px;
+  min-width: 180px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer p,
+.footer a {
+  font-size: 13px;
+  color: #fff;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: #ffb347;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.copyright {
   border-top: 1px solid #444;
+  margin-top: 24px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #bbb;
 }

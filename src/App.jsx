@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Footer from  './components/footer';
 import HomePage from './pages/HomePage';
 import ProductsPage from './pages/ProductsPage';
 import ProductDetailPage from './pages/ProductDetailPage';
@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <div className="main-container">
       <Navbar />
       <main className="flex-grow-1">
         <Routes>
