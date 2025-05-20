@@ -1,0 +1,49 @@
+/* Variables reemplazadas manualmente */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+}
+
+.hero-section {
+  background: url('/img/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 100px 0;
+  position: relative;
+}
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #4a6bff;
+  border-color: #4a6bff;
+}
+.btn-primary:hover {
+  background-color: #3954cc;
+  border-color: #3954cc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+}
