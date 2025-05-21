@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="main-container">
       <Navbar />
-      <main className="flex-grow-1">
+      <main style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<ProductsPage />} />
           <Route path="/productos" element={<ProductsPage />} />
