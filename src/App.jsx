@@ -13,8 +13,11 @@ function App() {
       <Navbar />
       <main style={{ flex: 1 }}>
         <Routes>
-          <Route path="/" element={<ProductsPage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/productos" element={<ProductsPage />} />
+          <Route path="/artesanos" element={<ArtisansPage />} />
+          {/* Puedes eliminar esta línea si no usas /Inicio */}
+          {/* <Route path="/Inicio" element={<HomePage />} /> */}
           {/* ...otras rutas */}
         </Routes>
       </main>

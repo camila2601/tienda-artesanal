@@ -21,7 +21,7 @@ const Navbar = () => {
         <Link to="/" className="mx-3" style={{ color: '#232323', textDecoration: 'none', fontWeight: 'bold' }}>
           Inicio
         </Link>
-        <Link to="/productos" className="mx-3" style={{ color: '#232323', textDecoration: 'none', fontWeight: 'bold' }}>
+        <Link to ="/productos" className="mx-3" style={{ color: '#232323', textDecoration: 'none', fontWeight: 'bold' }}>
           Productos
         </Link>
         <Link to="/artesanos" className="mx-3" style={{ color: '#232323', textDecoration: 'none', fontWeight: 'bold' }}>
