@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import ProductsPage from './pages/ProductsPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import ArtisansPage from './pages/ArtisansPage';
+import CartPage from './pages/CartPage'; // <-- Importa la página
 import './App.css';
 
 function App() {
@@ -16,9 +17,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/productos" element={<ProductsPage />} />
           <Route path="/artesanos" element={<ArtisansPage />} />
-          {/* Puedes eliminar esta línea si no usas /Inicio */}
-          {/* <Route path="/Inicio" element={<HomePage />} /> */}
-          {/* ...otras rutas */}
+          <Route path="/carrito" element={<CartPage />} /> {/* <-- Nueva ruta */}
         </Routes>
       </main>
       <Footer />

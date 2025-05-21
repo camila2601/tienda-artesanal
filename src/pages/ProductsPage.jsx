@@ -1,4 +1,6 @@
 import React from 'react';
+import { useCart } from '../CartContext'; // <-- Importa el hook
+import { Link } from 'react-router-dom';
 
 const products = [
   {
@@ -53,6 +55,8 @@ const products = [
 ];
 
 function ProductsPage() {
+  const { addToCart } = useCart(); // <-- Usa el hook
+
   return (
     <div className="section-container">
       {/* Hero Section */}
@@ -62,7 +66,7 @@ function ProductsPage() {
           <p className='mb-4'>
             Tienda dedicada a la venta de productos artesanales. Compra directo a los artesanos, apoya el comercio local y descubre productos únicos.
           </p>
-          <button className="shop-btn">Ver carrito</button>
+          <Link to="/carrito" className="shop-btn">Ver carrito</Link>
         </div>
         
       </div>
@@ -78,7 +82,9 @@ function ProductsPage() {
               <div className="product-price">${prod.price.toFixed(2)}</div>
               <div className="product-weight">{prod.weight}</div>
               <div className="fw-bold mb-2">{prod.name}</div>
-              <button className="add-btn">Agregar</button>
+              <button className="add-btn" onClick={() => addToCart(prod)}>
+                Agregar
+              </button>
             </div>
           </div>
         ))}
