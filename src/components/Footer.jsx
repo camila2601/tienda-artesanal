@@ -22,10 +22,10 @@ const Footer = () => {
             <h4>Marketplace Artesanal</h4>
             <p>Conectamos a artesanos con compradores que valoran lo hecho a mano y apoyan el comercio justo.</p>
             <div className="social-icons">
-              <a href="#"><FaFacebook /></a>
-              <a href="#"><FaInstagram /></a>
-              <a href="#"><FaTwitter /></a>
-              <a href="#"><FaWhatsapp /></a>
+              <a href="https://facebook.com/tu_pagina" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+              <a href="https://instagram.com/tu_usuario" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+              <a href="https://twitter.com/tu_usuario" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
             </div>
           </div>
           <div>

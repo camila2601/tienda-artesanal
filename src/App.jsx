@@ -6,6 +6,7 @@ import ProductsPage from './pages/ProductsPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import ArtisansPage from './pages/ArtisansPage';
 import CartPage from './pages/CartPage'; // <-- Importa la página
+import ContactPage from './pages/Contactpage';
 import './App.css';
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/productos" element={<ProductsPage />} />
           <Route path="/artesanos" element={<ArtisansPage />} />
-          <Route path="/carrito" element={<CartPage />} /> {/* <-- Nueva ruta */}
+          <Route path="/carrito" element={<CartPage />} />
+          <Route path="/contacto" element={<ContactPage />} /> {/* <-- Agrega esta línea */}
         </Routes>
       </main>
       <Footer />

@@ -86,7 +86,7 @@ body {
 
 /* ========== TARJETAS DE PRODUCTO ========== */
 .product-card {
-  background: #232323;
+  background: #2c2b2b;
   border-radius: 18px;
   box-shadow: 0 2px 16px #0006;
   color: #fff;
@@ -98,7 +98,7 @@ body {
 
 .product-card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 32px #000a;
+  box-shadow: 0 8px 32px rgba(221, 248, 71, 0.667);
   z-index: 2;
 }
 
@@ -234,7 +234,7 @@ body {
 }
 
 .copyright {
-  border-top: 1px solid #444;
+  border-top: 1px solid #dd1d1d;
   margin-top: 24px;
   padding-top: 10px;
   text-align: center;
@@ -300,4 +300,258 @@ body {
   color: #bbb;
   margin-top: 2rem;
 }
+
+/* ========== CARRITO DE COMPRAS ========== */
+.cart-container {
+  max-width: 500px;
+  margin: 40px auto 60px auto;
+  background: #232323;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #0007;
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  color: #fff;
+  text-align: left;
+}
+
+.cart-title {
+  color: #ff9900;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #181818;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 8px #0004;
+  transition: box-shadow 0.2s;
+}
+
+.cart-item:hover {
+  box-shadow: 0 4px 16px #ff990055;
+}
+
+.cart-item-info {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.cart-item-img {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ff9900;
+  background: #fff;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item-name {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.cart-item-price {
+  color: #ff9900;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+
+.cart-remove-btn {
+  background: #ff2e2e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 1.1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 10px;
+}
+
+.cart-remove-btn:hover {
+  background: #b80000;
+}
+
+.cart-empty {
+  color: #bbb;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 1.2rem;
+  color: #ff9900;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ========== ARTISANS PAGE ========== */
+.artisans-container {
+  max-width: 1100px;
+  margin: 40px auto 60px auto;
+  padding: 0 20px;
+}
+
+.artisans-title {
+  color: #ff9900;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.artisans-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.artisan-card {
+  background: #232323;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px #0005;
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.artisan-card:hover {
+  box-shadow: 0 8px 32px #ff990055;
+  transform: translateY(-6px) scale(1.03);
+}
+
+.artisan-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ff9900;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+.artisan-info {
+  text-align: center;
+}
+
+.artisan-name {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.artisan-specialty {
+  color: #ff9900;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.artisan-location {
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+/* ========== CONTACTO ========== */
+.contact-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #232323;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #0007;
+  padding: 2rem 2.5rem;
+  color: #cc7a00;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  background: #181818;
+  color: #f1cb34;
+  outline: none;
+  resize: none;
+}
+
+.contact-form textarea {
+  min-height: 80px;
+  max-height: 200px;
+}
+
+.contact-form button {
+  background: #ff9900;
+  color: #090909;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-form button:hover {
+  background: #cc7a00;
+}
+
+.contact-success {
+  color: #cc7a00;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-list {
+  margin-top: 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.contact-list li {
+  background: #181818;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px #0004;
+}
+
+
+
+
 
